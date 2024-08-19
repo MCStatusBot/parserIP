@@ -33,7 +33,8 @@ module.exports = function ParserIP(address) {
     ipv4: null,
     ipv6: null,
     port: null,
-    invalidDomain: false
+    invalidDomain: false,
+    invalidPort: false
   };
 
   if (match && match.groups) {
@@ -44,8 +45,9 @@ module.exports = function ParserIP(address) {
 
     if (match.groups.port) {
       const port = parseInt(match.groups.port, 10);
-      if (port >= 0 && port <= 65535) {
-        result.port = port;
+      result.port = port;
+      if (port <= 0 || port > 65535) {
+        result.invalidPort = true;
       }
     }
 

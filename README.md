@@ -20,7 +20,8 @@ console.log(myIP);
   ipv4: '192.168.0.22',
   ipv6: null,
   port: null,
-  invalidDomain: false
+  invalidDomain: false,
+  invalidPort:true
 }
 */
 
@@ -32,7 +33,8 @@ console.log(myIPWPort);
   ipv4: '192.168.0.22',
   ipv6: null,
   port: '8080',
-  invalidDomain: false
+  invalidDomain: false,
+  invalidPort:true
 }
 */
 
@@ -45,7 +47,8 @@ console.log(myDomain);
   ipv4: null,
   ipv6: null,
   port: null,
-  invalidDomain: false
+  invalidDomain: false,
+  invalidPort:true
 }
 */
 
@@ -57,7 +60,8 @@ console.log(myIPv6);
   ipv4: null,
   ipv6: '2602:f964:1:d::d',
   port: 80,
-  invalidDomain: false
+  invalidDomain: false,
+  invalidPort:true
 }
 */
 ```
