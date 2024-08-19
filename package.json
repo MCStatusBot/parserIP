@@ -1,0 +1,29 @@
+{
+  "name": "parserip",
+  "version": "1.0.0",
+  "description": "input your ipv4, ipv6 or domain and see if it is valid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MCStatusBot/parserIP.git"
+  },
+  "keywords": [
+    "ipv4",
+    "ipv4",
+    "domain",
+    "tld",
+    "ip"
+  ],
+  "author": "404invalid-user",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MCStatusBot/parserIP/issues"
+  },
+  "homepage": "https://github.com/MCStatusBot/parserIP#readme",
+  "dependencies": {
+    "axios": "^1.7.4"
+  }
+}
