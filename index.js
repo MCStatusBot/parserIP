@@ -26,7 +26,8 @@ fetchTLDlist();
 
 
 module.exports = function ParserIP(address) {
-  let match = address.match(ipv6Pattern) || address.match(ipv6NoBracketsPattern) || address.match(ipv4Pattern) || address.match(domainPattern);
+  const addressLowerCase=address.toLowerCase();
+  let match = addressLowerCase.match(ipv6Pattern) || addressLowerCase.match(ipv6NoBracketsPattern) || addressLowerCase.match(ipv4Pattern) || addressLowerCase.match(domainPattern);
 
   const result = {
     domain: null,
